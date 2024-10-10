@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - main
+      - my-edition
 
 jobs:
   deploy:
@@ -41,6 +42,7 @@ jobs:
           # Unzip the font files to the font directory
           unzip JetBrainsMono.zip -d ~/.local/share/fonts
           # Update the font cache
+          fc-list | grep 'JetBrains Mono'
           fc-cache -f -v
 
       - name: Build HTML documentaiton
