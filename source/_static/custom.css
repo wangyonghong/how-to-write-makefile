@@ -1,0 +1,4 @@
+/* 修改页面最大宽度 */
+.wy-nav-content {
+    max-width: 1200px;
+}
